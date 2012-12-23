@@ -9,7 +9,7 @@
     <file path="$PROJECT_DIR$/../Therap Dinner/Therap Dinner.iml" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356233616663" ignored="false" />
     <file path="/index.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356261456446" ignored="false" />
     <file path="/HomeController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356234252686" ignored="false" />
-    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356263414371" ignored="false" />
+    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356263505824" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/domain/User.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235061987" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/SignUpController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/ContentController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
@@ -304,7 +304,7 @@
       <file leaf-file-name="register.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="45" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.6942149">
+            <state line="54" column="30" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.8801653">
               <folding />
             </state>
           </provider>
@@ -926,14 +926,18 @@
       <created>1356263435451</created>
       <updated>1356263435451</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="User Registration/Login/Logout Completed">
+      <created>1356263510447</created>
+      <updated>1356263510447</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="976" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -944,7 +948,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1142,7 +1146,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="45" selection-start="1725" selection-end="1725" vertical-scroll-proportion="0.6942149">
+        <state line="54" column="30" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.8801653">
           <folding />
         </state>
       </provider>
