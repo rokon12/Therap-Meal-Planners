@@ -22,6 +22,10 @@
     <title><decorator:title/></title>
 
     <link rel="stylesheet" href="<c:url value='/resources/css/bootstrap.css'/>" type="text/css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="<c:url value="/resources/js/jquery-ui-timepicker-addon.js"/>"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css"/>
 
 
     <style type="text/css">
@@ -85,6 +89,47 @@
             height: auto;
             margin-bottom: 15px;
             padding: 7px 9px;
+        }
+
+            /* css for timepicker */
+        .ui-timepicker-div .ui-widget-header {
+            margin-bottom: 8px;
+        }
+
+        .ui-timepicker-div dl {
+            text-align: left;
+        }
+
+        .ui-timepicker-div dl dt {
+            height: 25px;
+            margin-bottom: -25px;
+        }
+
+        .ui-timepicker-div dl dd {
+            margin: 0 10px 10px 65px;
+        }
+
+        .ui-timepicker-div td {
+            font-size: 90%;
+        }
+
+        .ui-tpicker-grid-label {
+            background: none;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .ui-timepicker-rtl {
+            direction: rtl;
+        }
+
+        .ui-timepicker-rtl dl {
+            text-align: right;
+        }
+
+        .ui-timepicker-rtl dl dd {
+            margin: 0 65px 10px 10px;
         }
 
     </style>

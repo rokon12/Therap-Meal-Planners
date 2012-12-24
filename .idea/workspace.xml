@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f23b3741-186c-4b3d-b195-f3f417347aaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sqlScript.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/Meal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/StringToDatePerse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/js/jquery-ui-timepicker-addon.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/decorators/content.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MealPlanner.iml" afterPath="$PROJECT_DIR$/MealPlanner.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/log4j.properties" afterPath="$PROJECT_DIR$/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/messages.properties" afterPath="$PROJECT_DIR$/src/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScript.sql" afterPath="$PROJECT_DIR$/sqlScript.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MealPlanner.iws" />
@@ -10,7 +27,7 @@
     <file path="$PROJECT_DIR$/../Therap Dinner/Therap Dinner.iml" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356233616663" ignored="false" />
     <file path="/index.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356261456446" ignored="false" />
     <file path="/HomeController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356234252686" ignored="false" />
-    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356263700699" ignored="false" />
+    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356320490531" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/domain/User.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235061987" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/SignUpController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/ContentController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
@@ -29,13 +46,13 @@
     <file path="/Role.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356244554875" ignored="false" />
     <file path="/User.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356244590152" ignored="false" />
     <file path="/UserDao.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356251978559" ignored="false" />
-    <file path="/fragment.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356253174262" ignored="false" />
+    <file path="/fragment.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356351825192" ignored="false" />
     <file path="/UserDaoImpl.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356253133502" ignored="false" />
     <file path="/SignupController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356258982606" ignored="false" />
     <file path="/UserService.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356259551171" ignored="false" />
     <file path="/UserServiceImpl.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356260474495" ignored="false" />
     <file path="/register.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356248712121" ignored="false" />
-    <file path="/log4j.properties" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356245871975" ignored="false" />
+    <file path="/log4j.properties" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356324737359" ignored="false" />
     <file path="/db.properties" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356250309894" ignored="false" />
     <file path="/Data Source" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356250406723" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/dataSources.xml" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356250414526" ignored="false" />
@@ -48,8 +65,15 @@
     <file path="/LoginFilter.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356260132968" ignored="false" />
     <file path="/AuthKey.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356260722307" ignored="false" />
     <file path="/LogoutController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356261201266" ignored="false" />
-    <file path="/MealController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356262062970" ignored="false" />
-    <file path="/view.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356262198186" ignored="false" />
+    <file path="/MealController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356357352496" ignored="false" />
+    <file path="/view.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356356407625" ignored="false" />
+    <file path="/createMeal.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356355938478" ignored="false" />
+    <file path="/Meal.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356354145546" ignored="false" />
+    <file path="/MealDao.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356351631029" ignored="false" />
+    <file path="/MealServiceImpl.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356351949757" ignored="false" />
+    <file path="/MealService.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356351905880" ignored="false" />
+    <file path="/Catch Statement Body.txt.ft" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356353698972" ignored="false" />
+    <file path="/StringToDatePerse.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356354880290" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +93,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -104,8 +127,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/JdbcUserDaoImpl.java" line="26" class="com.therapservice.mealplanner.dao.JdbcUserDaoImpl" package="com.therapservice.mealplanner.dao">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -205,60 +227,22 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="MealPlanner" />
+    <favorites_list name="MealPlanner">
+      <favorite_root url="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="64" selection-start="990" selection-end="990" vertical-scroll-proportion="-6.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="35" selection-start="3175" selection-end="3180" vertical-scroll-proportion="1.5833334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="71" selection-start="813" selection-end="821" vertical-scroll-proportion="-14.041667">
-              <folding>
-                <marker date="1356260188083" expanded="true" signature="254:1538" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignupController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/SignupController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="67" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1925#1941#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MealController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MealController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="70" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+            <state line="102" column="58" selection-start="3631" selection-end="3631" vertical-scroll-proportion="1.9241706">
               <folding />
             </state>
           </provider>
@@ -267,28 +251,8 @@
       <file leaf-file-name="view.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="10" selection-start="359" selection-end="359" vertical-scroll-proportion="-10.0">
+            <state line="17" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="-10.625">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/filter/LoginFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="8" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -296,16 +260,65 @@
       <file leaf-file-name="register.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="30" selection-start="1941" selection-end="1941" vertical-scroll-proportion="-17.75">
+            <state line="17" column="46" selection-start="476" selection-end="500" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sqlScript.sql" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sqlScript.sql">
+      <file leaf-file-name="JdbcUserDaoImplTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/JdbcUserDaoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringToDatePerse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/StringToDatePerse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="31" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createMeal.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="61" selection-start="1820" selection-end="1823" vertical-scroll-proportion="-13.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignupController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/SignupController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="32" selection-start="2024" selection-end="2033" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MealDaoImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="28" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MealServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="32" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -329,22 +342,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/JdbcUserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/JdbcUserDaoImplTest.java" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/SignupController.java" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/filter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/auth/AuthKey.java" />
         <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/LogoutController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp" />
-        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/HomeController.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/register.jsp" />
+        <option value="$PROJECT_DIR$/sqlScript.sql" />
+        <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDao.java" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealService.java" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/Meal.java" />
+        <option value="$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/StringToDatePerse.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" />
+        <option value="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" />
       </list>
     </option>
   </component>
@@ -386,6 +399,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -498,21 +512,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MealPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MealPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MealPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MealPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mealplanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="MealPlanner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MealPlanner" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="decorators" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mealplanner" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -536,18 +599,18 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.therapservice.mealplanner.dao" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/resources/js" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/com/therapservice/mealplanner/utils" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/i18n" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.therapservice.mealplanner.service" />
@@ -571,6 +634,34 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.therapservice.mealplanner.dao" />
       <option name="MAIN_CLASS_NAME" value="com.therapservice.mealplanner.dao.JdbcConnectionTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="StringToDatePerse" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.therapservice.mealplanner.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="MealPlanner" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.therapservice.mealplanner.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.therapservice.mealplanner.dao.StringToDatePerse" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -659,7 +750,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -803,14 +894,16 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcUserDaoImplTest" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcConnectionTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.StringToDatePerse" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcConnectionTest" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.StringToDatePerse" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.JdbcConnectionTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -837,12 +930,36 @@
       <created>1356263703771</created>
       <updated>1356263703771</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sql script added">
+      <created>1356263896660</created>
+      <updated>1356263896660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="976" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -852,18 +969,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6723096" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903265" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.5040584" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4159613" sideWeight="0.5008117" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32889965" sideWeight="0.49025974" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810616" sideWeight="0.48701298" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6711004" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4159613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5828295" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4171705" sideWeight="0.4935065" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -912,7 +1029,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="User Registration/Login/Logout Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql script added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -926,6 +1043,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="User Registration/Login/Logout Completed" />
+    <MESSAGE value="sql script added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -935,107 +1053,71 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/js/jquery-ui-timepicker-addon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="269" selection-end="319" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="825" selection-end="830" vertical-scroll-proportion="0.0">
+        <state line="23" column="30" selection-start="613" selection-end="613" vertical-scroll-proportion="0.4609929">
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1356329244000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="59" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/auth/AuthKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="218" selection-end="231" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/LogoutController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/decorators/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="35" selection-start="3175" selection-end="3180" vertical-scroll-proportion="1.5833334">
+        <state line="132" column="9" selection-start="3703" selection-end="3703" vertical-scroll-proportion="-0.09223301">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/include.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="71" selection-start="813" selection-end="821" vertical-scroll-proportion="-14.041667">
-          <folding>
-            <marker date="1356260188083" expanded="true" signature="254:1538" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/SignupController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="67" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="41" selection-start="253" selection-end="374" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1925#1941#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="64" selection-start="990" selection-end="990" vertical-scroll-proportion="-6.625">
+        <state line="13" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="70" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+        <state line="21" column="32" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="10" selection-start="359" selection-end="359" vertical-scroll-proportion="-10.0">
-          <folding />
+        <state line="28" column="28" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/filter/LoginFilter.java">
+    <entry file="file://$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/StringToDatePerse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="8" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+        <state line="26" column="31" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1044,14 +1126,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="30" selection-start="1941" selection-end="1941" vertical-scroll-proportion="-17.75">
+        <state line="17" column="46" selection-start="476" selection-end="500" vertical-scroll-proportion="-6.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sqlScript.sql">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="46" column="61" selection-start="1820" selection-end="1823" vertical-scroll-proportion="-13.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="381" selection-end="381" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="18" selection-start="538" selection-end="538" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/JdbcUserDaoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/SignupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="32" selection-start="2024" selection-end="2033" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="58" selection-start="3631" selection-end="3631" vertical-scroll-proportion="1.9241706">
           <folding />
         </state>
       </provider>

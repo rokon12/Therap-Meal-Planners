@@ -12,6 +12,7 @@
     <title><fmt:message key="meal.view"/></title>
 </head>
 <body>
+<h1>Today's meal</h1>
 
 </body>
 </html>
