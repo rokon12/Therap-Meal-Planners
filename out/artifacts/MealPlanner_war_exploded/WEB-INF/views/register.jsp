@@ -15,7 +15,7 @@
     <%--<h1 style="text-align:center;"><fmt:message key="register.title"/></h1>--%>
 
     <div class="form-horizontal">
-        <form action="/signup" method="post">
+        <form action="<c:url value="/signup"/>" method="post">
             <c:if test="${fn:length(error) > 0 }">
                 <div class="span6 well text-error">
                     <c:forEach items="${error}" var="entry">
