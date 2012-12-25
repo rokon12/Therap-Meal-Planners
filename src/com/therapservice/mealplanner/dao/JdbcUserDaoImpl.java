@@ -44,7 +44,11 @@ public class JdbcUserDaoImpl implements UserDao {
 //            e.printStackTrace();
 //        }
 
-        DatabaseTemplate.executeInsertQuery("insert into User (userName, password, email, role, dateCreated,dateLastUpdated) values (? ,? ,? ,? ,?, ?)", user.getUserName(), user.getPassword(), user.getEmail(), user.getRole().getValue(), user.getDateCreated(), user.getDateLastUpdated());
+        try {
+            DatabaseTemplate.executeInsertQuery("insert into User (userName, password, email, role, dateCreated,dateLastUpdated) values (? ,? ,? ,? ,?, ?)", user.getUserName(), user.getPassword(), user.getEmail(), user.getRole().getValue(), user.getDateCreated(), user.getDateLastUpdated());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
