@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f23b3741-186c-4b3d-b195-f3f417347aaa" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/AccessError.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/utils/DateConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/therapservice/mealplanner/dao/MealDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealEditController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/editMeal.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/JdbcMealDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/utils/DatabaseTemplate.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/utils/DatabaseTemplate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/filter/LoginFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/Meal.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/domain/Meal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/web/MealController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDao.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/dao/MealDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealService.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/MealServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserService.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/therapservice/mealplanner/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/createMeal.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/messages.properties" afterPath="$PROJECT_DIR$/src/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlScript.sql" afterPath="$PROJECT_DIR$/sqlScript.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/meals/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MealPlanner.iws" />
@@ -30,7 +9,7 @@
     <file path="$PROJECT_DIR$/../Therap Dinner/Therap Dinner.iml" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356233616663" ignored="false" />
     <file path="/index.jsp" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356261456446" ignored="false" />
     <file path="/HomeController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356234252686" ignored="false" />
-    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356406504627" ignored="false" />
+    <file path="/Dummy.txt" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356428655496" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/domain/User.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235061987" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/SignUpController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
     <file path="$PROJECT_DIR$/../../write-about-me/write-about-me/src/com/codexplo/smoronika/web/ContentController.java" changelist="f23b3741-186c-4b3d-b195-f3f417347aaa" time="1356235064349" ignored="false" />
@@ -248,7 +227,7 @@
       <file leaf-file-name="DatabaseTemplate.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/utils/DatabaseTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="33" selection-start="3212" selection-end="3213" vertical-scroll-proportion="0.30769232">
+            <state line="103" column="69" selection-start="3634" selection-end="3634" vertical-scroll-proportion="0.53846157">
               <folding />
             </state>
           </provider>
@@ -905,7 +884,11 @@
       <created>1356357651092</created>
       <updated>1356357651092</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="meal controller added">
+      <created>1356428665759</created>
+      <updated>1356428665759</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1146,7 +1129,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/therapservice/mealplanner/utils/DatabaseTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="33" selection-start="3212" selection-end="3213" vertical-scroll-proportion="0.30769232">
+        <state line="103" column="69" selection-start="3634" selection-end="3634" vertical-scroll-proportion="0.53846157">
           <folding />
         </state>
       </provider>
