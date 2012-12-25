@@ -1,23 +1,22 @@
 <%--
   Created by IntelliJ IDEA.
   User: bazlur
-  Date: 12/24/12
-  Time: 10:08 AM
+  Date: 12/25/12
+  Time: 12:21 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/views/include.jsp" %>
 <html>
 <head>
-    <title><fmt:message key="meal.createNew"/></title>
+    <title><fmt:message key="meal.editMeal"/></title>
 </head>
 <body>
-
 <div class="container">
-    <form method="post" action="<c:url value="/meal"/>" class="span8">
+    <form method="PUT" action="<c:url value="/meal"/>" class="span8">
 
         <fieldset>
-            <legend><fmt:message key="meal.createNew"/></legend>
+            <legend><fmt:message key="meal.editMeal"/></legend>
 
             <c:if test="${fn:length(errors) > 0 }">
                 <div class="span6 well text-error">
@@ -26,6 +25,7 @@
                     </c:forEach>
                 </div>
             </c:if>
+
             <div class="span8">
                 <div class="span3">
                     <div class="control-group">
@@ -44,7 +44,7 @@
                 <div class="span3">
                     <div class="control-group">
                         <label class="control-label"> <fmt:message key="menu.day"/> </label>
-                        <input id="day" type="text" name="day" readonly="true"/>
+                        <input id="day" type="text" name="day" readonly="true" value="${meal.day}"/>
 
                     </div>
 
@@ -59,14 +59,14 @@
 
                         <div class="controls">
                             <input id="startTime"
-                                   name="startTime" type="text" readonly="true"/></div>
+                                   name="startTime" type="text" readonly="true" value="${meal.startTime}"/></div>
                     </div>
                     <div class="span3">
                         <label class="control-label" for="endTime"><fmt:message key="meal.endtime"/></label>
 
                         <div class="controls">
                             <input id="endTime"
-                                   name="endTime" type="text" readonly="true"/></div>
+                                   name="endTime" type="text" readonly="true" value="${meal.endTime}"/></div>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
 
                         <div class="controls">
                             <textarea name="dish" cols="80" rows="3"
-                                      style="margin: 0px 0px 9px; width: 443px; height: 137px;"></textarea>
+                                      style="margin: 0px 0px 9px; width: 443px; height: 137px;"> ${meal.dish}</textarea>
 
                         </div>
                     </div>

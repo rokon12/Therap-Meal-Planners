@@ -32,4 +32,9 @@ public class UserServiceImpl implements UserService {
         }
         return false;
     }
+
+    @Override
+    public User findByUserName(String username) {
+        return userDao.findUserByUserName(username);
+    }
 }

@@ -2,7 +2,7 @@ package com.therapservice.mealplanner.dao;
 
 import com.therapservice.mealplanner.domain.Meal;
 
-import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,6 +15,9 @@ public interface MealDao {
 
     public Meal findMealById(int meal);
 
-    public Meal findMealByDay(Date date);
+    public Meal findMealByDay(java.sql.Date date);
 
+    public void updateMeal(Meal meal);
+
+    public List<Meal> findAllMeal();
 }

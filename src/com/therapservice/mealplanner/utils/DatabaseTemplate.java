@@ -16,22 +16,28 @@ public class DatabaseTemplate {
         Connection conToUse = null;
         Statement stmt = null;
         try {
-
             conToUse = DatabaseConnectionPool.getConnection();
+            conToUse.setAutoCommit(false);
             stmt = conToUse.createStatement();
             stmt.executeQuery(query);
         } catch (SQLException e) {
+            if (conToUse != null) {
+                try {
+                    conToUse.rollback();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
             throw new RuntimeException(e);
         } finally {
 
             try {
                 stmt.close();
+                conToUse.setAutoCommit(false);
             } catch (SQLException e) {
                 closeConnection(conToUse);
                 throw new RuntimeException(e);
             }
-
-
         }
     }
 
@@ -59,16 +65,16 @@ public class DatabaseTemplate {
                 throw new RuntimeException(e);
             }
 
-
         }
         return listOfE;
     }
 
-    public static void executeInsertQuery(String query, Object... parameters) {
+    public static void executeInsertQuery(String query, Object... parameters) throws SQLException {
         Connection conToUse = null;
         PreparedStatement preparedStatement = null;
         try {
             conToUse = DatabaseConnectionPool.getConnection();
+            conToUse.setAutoCommit(false);
             preparedStatement = conToUse.prepareStatement(query);
 
             int i = 1;
@@ -94,12 +100,13 @@ public class DatabaseTemplate {
             preparedStatement.execute();
 
         } catch (SQLException e) {
+            conToUse.rollback();
             throw new RuntimeException(e);
         } finally {
 
             try {
-
                 preparedStatement.close();
+                conToUse.setAutoCommit(true);
             } catch (SQLException e) {
                 closeConnection(conToUse);
                 throw new RuntimeException(e);

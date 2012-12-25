@@ -2,7 +2,8 @@ package com.therapservice.mealplanner.service;
 
 import com.therapservice.mealplanner.domain.Meal;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 /**
  * Created with IntelliJ IDEA.

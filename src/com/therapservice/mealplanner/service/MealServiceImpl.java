@@ -1,10 +1,11 @@
 package com.therapservice.mealplanner.service;
 
+import com.therapservice.mealplanner.dao.JdbcMealDaoImpl;
 import com.therapservice.mealplanner.dao.MealDao;
-import com.therapservice.mealplanner.dao.MealDaoImpl;
 import com.therapservice.mealplanner.domain.Meal;
 
-import java.util.Date;
+import java.sql.Date;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,7 +18,7 @@ public class MealServiceImpl implements MealService {
     private MealDao mealDao;
 
     public MealServiceImpl() {
-        mealDao = new MealDaoImpl();
+        mealDao = new JdbcMealDaoImpl();
     }
 
     @Override

@@ -19,20 +19,25 @@
 -- Table structure for table `User`
 --
 
-DROP TABLE IF EXISTS `User`;
+DROP TABLE IF EXISTS `Meal`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 
-CREATE TABLE `User` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userName` varchar(250) DEFAULT NULL,
-  `password` varchar(250) DEFAULT NULL,
-  `email` varchar(250) DEFAULT NULL,
-  `dateCreated` datetime DEFAULT NULL,
-  `dateLastUpdated` datetime DEFAULT NULL,
-  `role` int(11) DEFAULT NULL,
+CREATE TABLE `Meal` (
+  `id`              INT(11) NOT NULL AUTO_INCREMENT,
+  `createdBy`       VARCHAR(250) DEFAULT NULL,
+  `startTime`       VARCHAR(250) DEFAULT NULL,
+  `endTime`         VARCHAR(250) DEFAULT NULL,
+  `dateCreated`     DATETIME DEFAULT NULL,
+  `dateLastUpdated` DATETIME DEFAULT NULL,
+  `day`             INT(11) DEFAULT NULL,
+  `dish`            VARCHAR(1024) DEFAULT NULL ,
+  `mealType`        varchar (250) DEFAULT NULL ,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+)
+  ENGINE = InnoDB
+  AUTO_INCREMENT = 3
+  DEFAULT CHARSET = latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +46,7 @@ CREATE TABLE `User` (
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
-INSERT INTO `User` VALUES (1,'admin','rokonoid12','anm_brr@yahoo.com','2012-12-23 00:00:00','2012-12-23 00:00:00',9),(2,'rokonoid','rokonoid12','anm_brr@yahoo.com','2012-12-23 00:00:00','2012-12-23 00:00:00',1);
+INSERT INTO `User` VALUES (1, 'admin', 'rokonoid12', 'anm_brr@yahoo.com', '2012-12-23 00:00:00', '2012-12-23 00:00:00', 9), (2, 'rokonoid', 'rokonoid12', 'anm_brr@yahoo.com', '2012-12-23 00:00:00', '2012-12-23 00:00:00', 1);
 /*!40000 ALTER TABLE `User` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

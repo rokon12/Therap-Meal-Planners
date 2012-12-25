@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,68 +22,44 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
  * User: Bazlur Rahman Rokon
- * Date: 12/23/12
- * Time: 5:25 PM
+ * Date: 12/25/12
+ * Time: 1:05 PM
  */
-@javax.servlet.annotation.WebServlet("/meal")
-public class MealController extends HttpServlet {
-    Logger log = LoggerFactory.getLogger(MealController.class);
+@WebServlet("/meal/edit")
+public class MealEditController extends HttpServlet {
+    Logger log = LoggerFactory.getLogger(MealEditController.class);
     private MealService mealService;
     private UserService userService;
 
-    public MealController() {
+    public MealEditController() {
         mealService = new MealServiceImpl();
         userService = new UserServiceImpl();
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         RequestDispatcher requestDispatcher = null;
-        List<String> params = Collections.list(request.getParameterNames());
-        if (params.contains("new")) {
-            validateUserAccess(request, response, requestDispatcher);
-            populateEditForm(request);
-            requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/meals/createMeal.jsp");
-            requestDispatcher.forward(request, response);
+        String id = request.getParameter("id");
+        if (!id.isEmpty()) {
+            Meal meal = mealService.findMealById(Integer.parseInt(id));
+            request.setAttribute("meal", meal);
         }
-        if (params.contains("edit")) {
-            String id = request.getParameter("edit");
-            if (!id.isEmpty()) {
-                Meal meal = mealService.findMealById(Integer.parseInt(id));
-                request.setAttribute("meal", meal);
-            }
-            populateEditForm(request);
+        populateEditForm(request);
 
-            requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/meals/editMeal.jsp");
-            requestDispatcher.forward(request, response);
-        } else {
-            Meal todayMeal = mealService.findMealByDay(new Date(new java.util.Date().getTime()));
-            request.setAttribute("meal", todayMeal);
-            requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/meals/view.jsp");
-            requestDispatcher.forward(request, response);
-        }
-    }
-
-    private void validateUserAccess(HttpServletRequest request, HttpServletResponse response, RequestDispatcher requestDispatcher) throws ServletException, IOException {
-        String userName = getLoggedInUserName(request);
-        if (!userName.isEmpty()) {
-            User user = userService.findByUserName(userName);
-            if (user.getRole() != Role.ROLE_ADMIN) {
-                requestDispatcher = request.getRequestDispatcher("/WEB-INF/views/meals/AccessError.jsp");
-                requestDispatcher.forward(request, response);
-            }
-        }
+        requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/meals/editMeal.jsp");
+        requestDispatcher.forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws
-            ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Meal meal = new Meal();
         Map<String, String> errors = new HashMap<String, String>();
         RequestDispatcher requestDispatcher = null;
@@ -116,6 +93,34 @@ public class MealController extends HttpServlet {
             requestDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/meals/view.jsp");
             requestDispatcher.forward(request, response);
         }
+
+
+        super.doPost(request, response);
+    }
+
+    private void validateUserAccess(HttpServletRequest request, HttpServletResponse response, RequestDispatcher requestDispatcher) throws ServletException, IOException {
+        String userName = getLoggedInUserName(request);
+        if (!userName.isEmpty()) {
+            User user = userService.findByUserName(userName);
+            if (user.getRole() != Role.ROLE_ADMIN) {
+                requestDispatcher = request.getRequestDispatcher("/WEB-INF/views/meals/AccessError.jsp");
+                requestDispatcher.forward(request, response);
+            }
+        }
+    }
+
+    public String getLoggedInUserName(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        return (String) session.getAttribute(AuthKey.AUTH_KEY);
+    }
+
+    public void populateEditForm(HttpServletRequest request) throws ServletException, IOException {
+        List<String> mealType = new ArrayList<String>();
+        mealType.add("Dinner");
+        mealType.add("Lunch");
+        mealType.add("Breakfast");
+        mealType.add("Evening Snacks");
+        request.setAttribute("mealType", mealType);
     }
 
     private boolean validate(Meal meal, Map<String, String> errors) {
@@ -144,19 +149,5 @@ public class MealController extends HttpServlet {
             isValid = false;
         }
         return isValid;
-    }
-
-    public void populateEditForm(HttpServletRequest request) throws ServletException, IOException {
-        List<String> mealType = new ArrayList<String>();
-        mealType.add("Dinner");
-        mealType.add("Lunch");
-        mealType.add("Breakfast");
-        mealType.add("Evening Snacks");
-        request.setAttribute("mealType", mealType);
-    }
-
-    public String getLoggedInUserName(HttpServletRequest request) {
-        HttpSession session = request.getSession();
-        return (String) session.getAttribute(AuthKey.AUTH_KEY);
     }
 }

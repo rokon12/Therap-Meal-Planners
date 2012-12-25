@@ -5,13 +5,7 @@
   Time: 9:41 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
-<%--<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>--%>
-<%--<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
-<%--<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>--%>
 
-<%--<fmt:setLocale value="en"/>--%>
-<%--<fmt:setBundle basename="messages"/>--%>
 <%@include file="include.jsp" %>
 <html>
 <head>
@@ -26,7 +20,7 @@
     <p class="lead">
         <fmt:message key="application.message"/>
     </p>
-    <a class="btn btn-large btn-success" href="<c:url value="/meal/view"/>"> <fmt:message
+    <a class="btn btn-large btn-success" href="<c:url value="/meal"/>"> <fmt:message
             key="menu.viewtodaysmeal"/> </a>
     <br/> <br/>
 

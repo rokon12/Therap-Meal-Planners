@@ -12,4 +12,6 @@ public interface UserService {
     public void saveNewUser(User user);
 
     public boolean checkLogin(String username, String password);
+
+    public User findByUserName(String username);
 }
